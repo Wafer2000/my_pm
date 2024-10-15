@@ -1,0 +1,9 @@
+export 'backdrop_path.dart';
+export 'movie_details.dart';
+export 'my_title.dart';
+export 'overview.dart';
+export 'popularity.dart';
+export 'recommendation_movies.dart';
+export 'release_date.dart';
+export 'similar_movies.dart';
+export 'vote_average.dart';
