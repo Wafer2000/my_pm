@@ -32,10 +32,10 @@ cd my_pm
 
 2. Install dependencies:
 
-   ```bash
-   flutter pub get
+```bash
+flutter pub get
 
-   ```
+```
 
 3. Create a `.env` file in the root directory and add your TMDb API key:
 
