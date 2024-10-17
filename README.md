@@ -51,6 +51,25 @@ flutter run
 
 ## Architecture
 
+Si te encuentras con el siguiente error:
+
+```
+The supplied phased action failed with an exception. Could not create task ':generateLockfiles'. A problem occurred starting process 'command '
+```
+
+Sigue estos pasos para solucionarlo:
+
+  1. Elimina la carpeta android en tu proyecto.
+  2. Crea la carpeta android nuevamente con el comando flutter create .
+  3. Verifica la versión de Java que estás utilizando con el comando javac --version
+  4. Verifica la versión de Gradle compatible con tu versión de Java en la documentación de Gradle
+  5. Edita el archivo gradle-wrapper.properties en la carpeta android/gradle y actualiza la versión de Gradle a la compatible con tu versión de Java.
+  6. Ejecuta flutter pub get para actualizar las dependencias.
+
+Esto debería solucionar el problema.
+
+## Architecture
+
 This application follows Clean Architecture principles, which separates concerns into different layers:
 
 - Presentation Layer: UI components and widgets.
