@@ -49,24 +49,24 @@ ACCESS_TOKEN=your_access_token_here
 flutter run
 ```
 
-## Architecture
+## Troubleshooting
 
-Si te encuentras con el siguiente error:
+If you encounter the following error:
 
 ```
 The supplied phased action failed with an exception. Could not create task ':generateLockfiles'. A problem occurred starting process 'command '
 ```
 
-Sigue estos pasos para solucionarlo:
+Follow these steps to fix it:
 
-  1. Elimina la carpeta android en tu proyecto.
-  2. Crea la carpeta android nuevamente con el comando flutter create .
-  3. Verifica la versión de Java que estás utilizando con el comando javac --version
-  4. Verifica la versión de Gradle compatible con tu versión de Java en la documentación de Gradle
-  5. Edita el archivo gradle-wrapper.properties en la carpeta android/gradle y actualiza la versión de Gradle a la compatible con tu versión de Java.
-  6. Ejecuta flutter pub get para actualizar las dependencias.
+  1. Delete the `android` folder in your project.
+  2. Create the `android` folder again with the `flutter create` command.
+  3. Check the Java version you are using with the `javac --version` command.
+  4. Check the Gradle version compatible with your Java version in the Gradle documentation.
+  5. Edit the `gradle-wrapper.properties` file in the `android/gradle/wrapper/` folder and update the Gradle version to the one compatible with your Java version.
+  6. Run `flutter pub get` to update the dependencies.
 
-Esto debería solucionar el problema.
+This should fix the problem.
 
 ## Architecture
 
